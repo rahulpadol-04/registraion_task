@@ -103,23 +103,24 @@ body {
 </head>
 <body>
 <div class="signup-form">
-<h2>Welcome</h2>
+<!-- <h2>Welcome</h2> -->
 
 <form>
+	<div class="form-group" style="font-size:20px; color:#000;" align="center">
+		Welcome Back <?php echo $firstname?> 
+	</div>
 	<div class="form-group">
-<a href="<?php echo site_url('create_school');?>" class="btn btn-success btn-lg btn-block" style="color:#fff;">Cretae New School</a>
-</div>
+		<a href="<?php echo site_url('create_school');?>" class="btn btn-success btn-lg btn-block" style="color:#fff;">Cretae New School</a>
+	</div>
 
-<div class="form-group">
-<a href="<?php echo site_url('view_school');?>" class="btn btn-success btn-lg btn-block" style="color:#fff;">View Schools</a>
-</div>
-<!-- <div class="form-group" style="font-size:20px; color:#000;" align="center">
-Howdy <?php echo $firstname?> 
-</div> -->
+	<div class="form-group">
+		<a href="<?php echo site_url('view_school');?>" class="btn btn-success btn-lg btn-block" style="color:#fff;">View Schools</a>
+	</div>
+ 
 	    
-<div class="form-group">
-<a href="<?php echo site_url('Logout');?>" class="btn btn-success btn-lg btn-block" style="color:#fff;">Logout</a>
-</div>
+	<div class="form-group">
+		<a href="<?php echo site_url('Logout');?>" class="btn btn-success btn-lg btn-block" style="color:#fff;">Logout</a>
+	</div>
  </form>
 
 </div>
